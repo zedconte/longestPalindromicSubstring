@@ -1,4 +1,8 @@
-import {stop, start, sayst} from '../support/benchmark.js';
+const { stop, start, sayst } = require('../support/benchmark');
+
+//import {stop, start, sayst} from '../support/benchmark.js';
+//const { stop, start, sayst } = require('../support/benchmark.js');
+
 // Declare function
 //function say(something) {
 
@@ -27,5 +31,5 @@ sayst(twoSum([2,7,11,15], 9));
 
 //export module
 if (typeof module === 'object') {
-    module.exports = twoSum;
+    module.exports = { twoSum, }
 }

@@ -1,4 +1,8 @@
-const twoSum = require('../src/sum2');
+//const twoSum = require('../src/sum2');
+//import twoSum from '../support/benchmark';
+const {twoSum} = require('../src/sum2');
+
+
 
 test("Returns Sum2 [2,7,11,15]", () => {
     expect(twoSum([2,7,11,15], 9)).toEqual([0,1]);

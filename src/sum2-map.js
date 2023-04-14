@@ -1,4 +1,5 @@
-import {stop, start, sayst } from '../support/benchmark.js';
+//import {stop, start, sayst } from '../support/benchmark.js';
+const { stop, start, sayst } = require('../support/benchmark');
 
 /**
  * @param {number[]} nums

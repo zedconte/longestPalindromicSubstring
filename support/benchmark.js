@@ -1,12 +1,12 @@
 var startTime, endTime;
 
-export const start = () => {
+const start = () => {
     console.log('start');
 
   startTime = performance.now();
 };
 
-export const stop = () => {
+const stop = () => {
   console.log('stop');
   endTime = performance.now();
   var timeDiff = endTime - startTime; //in ms
@@ -18,7 +18,7 @@ export const stop = () => {
   console.log(timeDiff + " ms");
 };
 
-export const sayst = (something) => {
+const sayst = (something) => {
   
     if (typeof window !== 'undefined') {
       //console.log(alert === window.alert); // 👉️ true    
@@ -27,3 +27,6 @@ export const sayst = (something) => {
       console.log(something);    // 👉️ can't use alert()
     }
   };
+  if (typeof module === 'object') {
+    module.exports = { start, stop, sayst, }
+  }
