@@ -9,7 +9,7 @@
   <!-- Scripts that don't need to manipulate the DOM go here -->
   <script>
     <!-- This is an embedded script -->
-    console.log("twoSum([2,7,11,15], 9)");
+    console.log("longestPalindromicSubstring('rabsabbascus')");
   </script>
   <!-- This is a linked script -->
 
@@ -23,18 +23,22 @@
 
 
 <!-- Scripts that need to manipulate the DOM go here -->
-<script type="src/javascript" src="src/sum2.js"></script>
-<script type="src/javascript" src="src/sum2-map.js"></script>
 
 
   <script>
-    document.querySelector('#p1').innerHTML = "twoSum([2,7,11,15], 9)";
+    document.querySelector('#p1').innerHTML = "longestPalindromicSubstring('rabsabbascus')";
   </script>
 
 <script>
-    document.querySelector('#p2').innerHTML = "twoSumMap([2,7,11,15], 9)";
+    document.querySelector('#p2').innerHTML = "longestPalindromicSubstring('rabsabbascus')";
   </script>
+   <script src = "src/myLibrary.js" > </script>
+   <script>
+      myLibrary.greet('Raul');
+      myLibrary.longestPalindromicSubstring('rabsabbascus');
+      document.querySelector('#p2').innerHTML = myLibrary.longestPalindromicSubstring('rabsabbascus');
 
+   </script>
 
 </body>
 
